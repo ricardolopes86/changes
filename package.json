@@ -1,0 +1,15 @@
+{
+  "name": "changes",
+  "version": "1.0.0",
+  "description": "Tracking changes",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com:ricardolopes86/changes.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
