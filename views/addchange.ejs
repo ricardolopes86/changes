@@ -1,0 +1,46 @@
+<% layout('main') %>
+<div>
+    <p></p>
+</div>
+<div class="row">
+    <form class="form-horizontal" action="/change/add" method="post">
+        <div class="form-group">
+            <label for="change_number" class="col-sm-2 control-label">Change Number</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="change_number" placeholder="Change Number">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="change_description" class="col-sm-2 control-label">Change Description</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="change_description" placeholder="Change Description">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="start_date" class="col-sm-2 control-label">Change Start Date</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="start_date" placeholder="Change Start Date">
+            </div>
+            <label for="start_hour" class="col-sm-2 control-label">Change Start Hour</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="start_hour" placeholder="Change Start Hour">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="end_date" class="col-sm-2 control-label">Change End Date</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="end_date" placeholder="Change End Date">
+            </div>
+            <label for="end_hour" class="col-sm-2 control-label">Change End Hour</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="end_hour" placeholder="Change End Hour">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary">Save</button>
+
+            </div>
+        </div>
+    </form>
+</div>
