@@ -1,4 +1,5 @@
 var express = require('express');
+var engine = require('ejs-mate');
 var bodyParser = require('body-parser');
 var path = require('path');
 var ejs = require('ejs');
@@ -12,6 +13,7 @@ var port = 3000;
 //init app
 const app = express();
 
+app.engine('ejs', engine);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -38,7 +40,7 @@ app.use(function(err, req, res, next) {
 
     // render the error page
     res.status(err.status || 500);
-    res.render('error');
+    res.render('error', {error: err});
 });
 
 app.listen(port, function (err) {
