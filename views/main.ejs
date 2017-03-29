@@ -11,7 +11,6 @@
     <!--<link rel="stylesheet" href="bootstrap/dis/css/bootstrap.min.css">-->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/sticky-footer-navbar.css">
-    <link rel="stylesheet" href="/fullcalendar/dist/fullcalendar.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,20 +19,9 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script src="jquery/dist/jquery.min.js"></script>
-    <script src="/moment/min/moment.min.js"></script>
-    <script src="/fullcalendar/dist/fullcalendar.js"></script>
-    <script>
-        $(document).ready(function() {
-
-            // page is now ready, initialize the calendar...
-
-            $('#calendar').fullCalendar({
-                events: '/api/allevents'
-            })
-
-        });
-    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -68,7 +56,5 @@
         </div>
     </footer>
 
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
