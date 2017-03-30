@@ -64,3 +64,5 @@ typings/
 .idea/
 public/bootstrap/
 public/jquery/
+public/moment/
+public/fullcalendar/
