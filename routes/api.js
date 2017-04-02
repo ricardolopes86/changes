@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var controller = require('../controllers/changes_controller');
+var controller = require('../controllers/changes.controller');
 
 router.get('/', function(req, res, next) {
     res.json();
@@ -23,7 +23,18 @@ router.get('/allevents', function(req, res, next) {
             allDay : false // will make the time show
         }
     ];
-    res.json(eventos);
+    return controller.getAllChanges(req, res, next);
 });
+
+router.post('/save', function (req, res, next) {
+    var change = {};
+    change.title = req.body.title;
+    change.description = req.body.description;
+    change.start = req.body.start;
+    change.end = req.body.end;
+
+    console.log(change);
+    return controller.saveChange(req, res, next, change);
+})
 
 module.exports = router;

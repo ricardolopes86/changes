@@ -3,23 +3,23 @@
     <p></p>
 </div>
 <div class="row">
-    <form class="form-horizontal" action="/change/add" method="post">
+    <form class="form-horizontal" action="/api/save" method="post">
         <div class="form-group">
-            <label for="change_number" class="col-sm-2 control-label">Change Number</label>
+            <label for="title" class="col-sm-2 control-label">Change Number</label>
             <div class="col-sm-6 input-group">
-                <input type="text" class="form-control" id="change_number" placeholder="Change Number">
+                <input type="text" class="form-control" id="title" name="title" placeholder="Change Number">
             </div>
         </div>
         <div class="form-group">
-            <label for="change_description" class="col-sm-2 control-label">Change Description</label>
+            <label for="description" class="col-sm-2 control-label">Change Description</label>
             <div class="col-sm-6 input-group">
-                <input type="text" class="form-control" id="change_description" placeholder="Change Description">
+                <input type="text" class="form-control" id="description" name="description" placeholder="Change Description">
             </div>
         </div>
         <div class="form-group">
-            <label for="start_date" class="col-sm-2 control-label">Change Start Date</label>
+            <label for="start" class="col-sm-2 control-label">Change Start Date</label>
             <div class="col-sm-3 input-group">
-                <input type="text" class="form-control" id="start_date" placeholder="Change Start Date">
+                <input type="text" class="form-control" name="start" id="start" placeholder="Change Start Date">
                 <span class="input-group-addon">
                     <span class="fa fa-calendar">
                     </span>
@@ -27,16 +27,16 @@
             </div>
             <script type="text/javascript">
               $(function () {
-                  $('#start_date').datetimepicker({
-                      format: 'YYYY-MM-DD hh:mm'
+                  $('#start').datetimepicker({
+                      format: 'YYYY-MM-DD hh:mm a'
                   });
               });
             </script>
         </div>
         <div class="form-group">
-            <label for="end_date" class="col-sm-2 control-label">Change End Date</label>
+            <label for="end" class="col-sm-2 control-label">Change End Date</label>
             <div class="col-sm-3 input-group">
-                <input type="text" class="form-control" id="end_date" placeholder="Change End Date">
+                <input type="text" class="form-control" name="end" id="end" placeholder="Change End Date">
                 <span class="input-group-addon">
                     <span class="fa fa-calendar">
                     </span>
@@ -44,8 +44,8 @@
             </div>
             <script type="text/javascript">
             $(function () {
-                $('#end_date').datetimepicker({
-                    format: 'YYYY-MM-DD hh:mm'
+                $('#end').datetimepicker({
+                    format: 'YYYY-MM-DD hh:mm a'
                 });
             });
         </script>
